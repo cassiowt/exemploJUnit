@@ -19,8 +19,5 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    - name: Navigate to demo directory
-      run: cd demo
-
     - name: Run Selenium Tests
       run: mvn test -Dbrowser=${{ matrix.browser }}
