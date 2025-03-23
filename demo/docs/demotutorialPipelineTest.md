@@ -98,6 +98,7 @@ Este roteiro detalha como configurar testes automatizados com Selenium em Java e
         }
         ```
 
+        
         * Este exemplo abre `hortti.com` e verifica o título da página.
         * Usa o WebdriverManager para baixar os drivers.
         * Executa os testes no Chrome e no Firefox.
