@@ -13,11 +13,14 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up JDK 11
+    - name: Set up JDK 17
       uses: actions/setup-java@v3
       with:
-        java-version: '11'
+        java-version: '17' # garanta que aqui é 17.
         distribution: 'temurin'
 
+    - name: Navigate to demo directory
+      run: cd demo
+
     - name: Run Selenium Tests
-      run: mvn test -Dbrowser=${{ matrix.browser }} # Run tests in the specified browser
+      run: mvn test -Dbrowser=${{ matrix.browser }}
