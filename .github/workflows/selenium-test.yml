@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chrome, firefox] # testaremos nos dois navegadores
+        browser: [chrome, firefox]
 
     steps:
     - name: Checkout code
@@ -19,5 +19,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
 
-    - name: Run Selenium Tests (Chrome)
-      run: mvn test -Dbrowser=${{ matrix.browser }} # navegador passado por parametro
+    - name: Navigate to demo directory
+      run: cd demo
+
+    - name: Run Selenium Tests
+      run: mvn test -Dbrowser=${{ matrix.browser }}
