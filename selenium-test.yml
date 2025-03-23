@@ -20,4 +20,4 @@ jobs:
         distribution: 'temurin'
 
     - name: Run Selenium Tests
-      run: mvn test -Dbrowser=${{ matrix.browser }}
+      run: mvn test -Dbrowser=${{ matrix.browser }} # Run tests in the specified browser
