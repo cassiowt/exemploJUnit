@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="WebsiteTest" time="14.934" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="IMCTest" time="0.005" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="/Users/cassioatrindade/.cache/selenium/chromedriver/mac-arm64/134.0.6998.165/chromedriver"/>
@@ -60,21 +60,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="tearDown" classname="WebsiteTest" time="12.107">
-    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
-SLF4J(W): Defaulting to no-operation (NOP) logger implementation
-SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-mar. 27, 2025 8:33:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find CDP implementation matching 134
-mar. 27, 2025 8:33:56 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTÊNCIA: Unable to find version of CDP to use for 134.0.6998.166. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="testWebsiteTitle" classname="WebsiteTest" time="2.816">
-    <system-err><![CDATA[mar. 27, 2025 8:33:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-ADVERTÊNCIA: Unable to find CDP implementation matching 134
-mar. 27, 2025 8:33:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-ADVERTÊNCIA: Unable to find version of CDP to use for 134.0.6998.166. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
+  <testcase name="testVerificaIMCValido" classname="IMCTest" time="0.001"/>
+  <testcase name="testVerificaIMCInvalido" classname="IMCTest" time="0.001"/>
+  <testcase name="testPessoaNull" classname="IMCTest" time="0.001"/>
 </testsuite>
