@@ -1,6 +1,6 @@
-```markdown
 # Guia Rápido de Comandos Git Essenciais
 
+```markdown
 ## Configuração Inicial
 ```bash
 # Define nome de usuário global
